@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="../Weather App Project/img/weather-ico-img.ico">
+    <title>Weather App Project</title>
+</head>
+<body>
+
+    <header>
+        <div id="location-and-time-container">
+            <div id="location"></div>
+            <div id="time"></div>
+        </div>    
+    </header>
+
+    <main>
+        <form id="weather-form">
+            <input type="text" id="city-input" placeholder="Enter a city">
+            <button type="submit" id="get-weather-button">Get Weather</button>
+        </form>
+    
+        <div id="general-container">
+            <div id="weather-container">
+                <div class="welcome-message-container" style="display: none;"></div>
+                <div class="card" style="display: none;"></div>
+                <div class="error-message-container" style="display: none;"></div>        
+            </div>
+            <div id="weather-info-container" style="display: none;">
+                <div id="weather-info-box" ></div>
+            </div>
+        </div>    
+    </main>
+
+    <footer>
+        <div id="info-container">
+            <div id="foot-container">
+                <div id="techs">
+                    <p>Technologies used:</p>
+                    <ul class="tech-list">
+                        <li>
+                            <img src="img/html.svg" alt="HTML5" title="HTML 5" class="tech-logo">
+                        </li>
+                        <li>
+                            <img src="img/css.svg" alt="CSS3" title="CSS 3" class="tech-logo">
+                        </li>
+                        <li>
+                            <img src="img/js.svg" alt="JavaScript" title="JavaScript" class="tech-logo">
+                        </li>
+                    </ul>
+                </div>
+                <div id="api">
+                    <p>Data obtained using API from: <a href="https://openweathermap.org/" target="_blank">Open Weather</a></p>
+                </div>
+            </div>
+            <div id="links">
+                <a href="#" target="_blank" title="Portfolio">
+                    <i class="bi bi-card-checklist"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ignacio-agustin-gonzalez-110768270/" target="_blank" title="Linkedin">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/iggydc17?tab=repositories" target="_blank" title="GitHub Repository">
+                    <i class="bi bi-github"></i>
+                </a>    
+                <a href="#" target="_blank" title="CV">
+                    <i class="bi bi-file-person-fill"></i>
+                </a>
+                <a href="mailto:iggy.dc17@gmail.com" target="_blank" title="Email">
+                    <i class="bi bi-envelope"></i>
+                </a>
+            </div>    
+        </div>
+        <div id="copy">
+            <p>Copyrighting &COPY; 2024 &nbsp; <a href="mailto:iggy.dc17@gmail.com" target="_blank">Ignacio Agustin González</a></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
